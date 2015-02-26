@@ -1,0 +1,2 @@
+caption always
+caption string "%{= bW}%3n %{y}%t %{-} %= %H | %D %M %d %c"
