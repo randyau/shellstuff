@@ -9,5 +9,7 @@ defscrollback 30000
 # no annoying audible bell
 vbell on
 
-caption always
-caption string "%{= bW}%H%{g}[%= %{wk}%?%-Lw%?%{=b bR}(%{W}%n*%f %t%?(%u)%?%{=b bR})%{= bw}%?%+Lw%?%?%= %{g}]| %D %M %d %c"
+#caption always
+#caption string "%{= bW}%H%{g}[%= %{wk}%?%-Lw%?%{=b bR}(%{W}%n*%f %t%?(%u)%?%{=b bR})%{= bw}%?%+Lw%?%?%= %{g}]| %D %M %d %c"
+hardstatus string "%{= bW}%H%{g}[%= %{wk}%?%-Lw%?%{=b bR}(%{W}%n*%f %t%?(%u)%?%{=b bR})%{= bw}%?%+Lw%?%?%= %{g}]| %D %M %d %c"
+hardstatus alwayslastline
