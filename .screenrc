@@ -1,2 +1,13 @@
+startup_message off
+
+#256 color terminal support
+term xterm-256color
+
+#30k scroll buffer
+defscrollback 30000
+
+# no annoying audible bell
+vbell on
+
 caption always
-caption string "%{= bW}%H%{g}[%= %{wk}%?%-Lw%?%{=b bR}(%{W}%n*%f %t%?(%u)%?%{=b bR})%{= bw}%?%+Lw%?%?%= %{g}] | %D %M %d %c"
+caption string "%{= bW}%H%{g}[%= %{wk}%?%-Lw%?%{=b bR}(%{W}%n*%f %t%?(%u)%?%{=b bR})%{= bw}%?%+Lw%?%?%= %{g}]| %D %M %d %c"
