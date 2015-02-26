@@ -1,2 +1,2 @@
 caption always
-caption string "%{= bW}%3n %{y}%t %{-} %= %H | %D %M %d %c"
+caption string "%{= bW}%H%{g}[%= %{wk}%?%-Lw%?%{=b bR}(%{W}%n*%f %t%?(%u)%?%{=b bR})%{= bw}%?%+Lw%?%?%= %{g}] | %D %M %d %c"
