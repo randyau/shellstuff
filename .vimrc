@@ -51,6 +51,11 @@ autocmd BufWrite *.py,*.js,*.html,*.php mark ' | silent! %s/\s\+$// | norm ''
 
 filetype off
 filetype plugin indent off
-set rtp+=$GOROOT/misc/vim
+
+call plug#begin('~/.vim/plugged')
+Plug 'fatih/vim-go'
+call plug#end()
+"Plug 
+"
 filetype plugin indent on
 syntax on
