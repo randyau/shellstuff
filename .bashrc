@@ -53,3 +53,18 @@ fi
 unset command_not_found_handle
 
 source ~/.git-completion.bash
+
+if [ "$TERM" = "screen" ]; then
+  screen_set_window_title () {
+    local HPWD="$PWD"
+    case $HPWD in
+      $HOME) HPWD="~";;
+      ## long name option:
+      # $HOME/*) HPWD="~${HPWD#$HOME}";;
+      ## short name option:
+      *) HPWD=`basename "$HPWD"`;;
+    esac
+    printf '\ek%s\e\\' "$HPWD"
+  }
+  PROMPT_COMMAND="screen_set_window_title; $PROMPT_COMMAND"
+fi

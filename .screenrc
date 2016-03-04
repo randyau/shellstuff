@@ -1,7 +1,7 @@
 startup_message off
 
 #256 color terminal support
-term xterm-256color
+#term xterm-256color
 
 #30k scroll buffer
 defscrollback 30000
