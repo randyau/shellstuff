@@ -8,6 +8,12 @@ elif [ -f /usr/local/share/git-core/contrib/completion/git-prompt.sh ]; then
     . /usr/local/share/git-core/contrib/completion/git-prompt.sh
 fi
 
+if [ -f /usr/share/git-core/contrib/completion/git-completion.bash ]; then
+    . /usr/share/git-core/contrib/completion/git-completion.bash
+elif [ -f /usr/local/share/git-core/contrib/completion/git-completion.bash ]; then
+    . /usr/local/share/git-core/contrib/completion/git-completion.bash
+fi
+
 if [ -f ~/.aliasrc ]; then
     . ~/.aliasrc
 fi
@@ -54,7 +60,7 @@ fi
 # Stop that.
 unset command_not_found_handle
 
-source ~/.git-completion.bash
+#source ~/.git-completion.bash
 export GIT_PS1_SHOWDIRTYSTATE=1
 
 if [ "$TERM" = "screen" ]; then
