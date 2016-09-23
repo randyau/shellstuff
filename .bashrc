@@ -6,6 +6,10 @@ if [ -f /usr/share/git-core/contrib/completion/git-prompt.sh ]; then
     . /usr/share/git-core/contrib/completion/git-prompt.sh
 fi
 
+if [ -f /usr/local/share/git-core/contrib/completion/git-prompt.sh ]; then
+    . /usr/local/share/git-core/contrib/completion/git-prompt.sh
+fi
+
 if [ -f ~/.aliasrc ]; then
     . ~/.aliasrc
 fi
