@@ -59,3 +59,4 @@ call plug#end()
 "
 filetype plugin indent on
 syntax on
+set mouse=c
