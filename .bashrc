@@ -2,6 +2,10 @@ if [ -f /etc/bashrc ]; then
     . /etc/bashrc
 fi
 
+if [ -f ~/.git-prompt.sh ]; then
+    . ~/.git-prompt.sh
+fi
+
 if [ -f /usr/share/git-core/contrib/completion/git-prompt.sh ]; then
     . /usr/share/git-core/contrib/completion/git-prompt.sh
 elif [ -f /usr/local/share/git-core/contrib/completion/git-prompt.sh ]; then
@@ -16,6 +20,14 @@ fi
 
 if [ -f /usr/local/share/git-core/contrib/completion/git-prompt.sh ]; then
     . /usr/local/share/git-core/contrib/completion/git-prompt.sh
+fi
+
+if [ -f ~/shellstuff/git/git-completion.bash ]; then
+    . ~/shellstuff/git/git-completion.bash
+fi
+
+if [ -f ~/shellstuff/git/git-prompt.sh ]; then
+    . ~/shellstuff/git/git-prompt.sh
 fi
 
 if [ -f ~/.aliasrc ]; then
@@ -81,3 +93,5 @@ if [ "$TERM" = "screen" ]; then
   }
   PROMPT_COMMAND="screen_set_window_title; $PROMPT_COMMAND"
 fi
+
+eval $(docker-machine env default)
