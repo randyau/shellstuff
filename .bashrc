@@ -94,4 +94,4 @@ if [ "$TERM" = "screen" ]; then
   PROMPT_COMMAND="screen_set_window_title; $PROMPT_COMMAND"
 fi
 
-eval $(docker-machine env default)
+#eval $(docker-machine env default)
