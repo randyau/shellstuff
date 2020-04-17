@@ -11,5 +11,5 @@ vbell on
 
 #caption always
 #caption string "%{= bW}%H%{g}[%= %{wk}%?%-Lw%?%{=b bR}(%{W}%n*%f %t%?(%u)%?%{=b bR})%{= bw}%?%+Lw%?%?%= %{g}]| %D %M %d %c"
-hardstatus string "%{= bW}%H%{g}[%= %{bw}%?%-Lw%?%{=b bR}(%{W}%n*%f %t%?(%u)%?%{=b bR})%{= bw}%?%+Lw%?%?%= %{g}]| %D %M %d %c%{-}"
+hardstatus string "%{= bW}%H%{g}[%= %{bw}%?%-Lw%?%{=b bR}(%{W}%n*%f %t%?(%u)%?%{=b bR})%{= bw}%?%+Lw%?%?%= %{g}]|%D %Y-%m-%d %c%{-}"
 hardstatus alwayslastline

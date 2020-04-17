@@ -2,6 +2,11 @@ if [ -f /etc/bashrc ]; then
     . /etc/bashrc
 fi
 
+if [ -z "$SSH_AUTH_SOCK" ] ; then
+  eval `ssh-agent -s`
+  ssh-add
+fi
+
 if [ -f /usr/share/git-core/contrib/completion/git-prompt.sh ]; then
     . /usr/share/git-core/contrib/completion/git-prompt.sh
 elif [ -f /usr/local/share/git-core/contrib/completion/git-prompt.sh ]; then
